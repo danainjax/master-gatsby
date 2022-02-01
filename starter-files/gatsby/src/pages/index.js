@@ -1,11 +1,11 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Layout from '../components/Layout';
 
-export default function HomePage() {
+export default function HomePage({ children }) {
   return (
-    <div>
-      <Nav />
+    <Layout>
+      {children}
       <p>Homey page</p>
-    </div>
+    </Layout>
   );
 }
